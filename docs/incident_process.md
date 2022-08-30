@@ -1,6 +1,6 @@
 # Incident Response Process at Acme Corp
 
-_Are you actively experiencing an incident and need support? Make a copy of the [incident template][wiki_incident_template_link] to use as a checklist and reduce cognitive overhead. The most important thing to focus on is remediating the incident. Page [incident on-call rotation][incident_oncall_rotation] for emergency assistance._
+_Are you actively experiencing an incident and need support? Make a copy of the [incident template][wiki_incident_template] to use as a checklist and reduce cognitive overhead. The most important thing to focus on is remediating the incident. Page [incident on-call rotation][incident_oncall_rotation] for emergency assistance._
 
 Building customer trust, acting as an owner in all we do, and continuously learning are critical values at Acme Corp. We reflect these values in how we build and deliver our products and in how we support our customers. We also reflect these values in how we approach software incidents.
 
@@ -54,7 +54,7 @@ If it’s determined that the issue is an incident, the first thing to do is nam
 #### In the first 20 minutes, the incident commander will:
 
 * Page the owning team of the impacted service or functionality based on [this document][service_ownership_resource]. If it’s unclear who owns the impacted service, page the [incident on-call rotation][incident_oncall_rotation] for assistance
-* Create a new incident document from the [incident document template][wiki_incident_template_link]
+* Create a new incident document from the [incident document template][wiki_incident_template]
     * Name it using the format: [inc-YY-MM-DD-SEV-X] {functionality} is {state} for {audience}
     * Move it [here][wiki_incident_directory]
 * Fill out the initial incident description and format for initial communication in the incident document. Here’s an example:
@@ -77,11 +77,11 @@ If it’s determined that the issue is an incident, the first thing to do is nam
 
         Expect an update on the status of this incident in (30 minutes | 1 hour | 3 hours) or sooner.
 
-        &lt;Responder Name>
+        <Responder Name>
 
 * Send the created message to the [incident distro][incident_distro_email] email distribution list and post it in the [#incidents][general_incidents_chat_channel] chat channel.
 * Create a dedicated chat channel using the format using the format: inc-YY-MM-DD-SEV-X-{functionality} is {state} for {audience} and post a link to the incident document in the channel and bookmark the file.
-* Create and join a video bridge &lt;link to create a video bridge>
+* Create and join a video bridge <link to create a video bridge>
     * Add the link to the incident document
 
 #### General advice for the declare phase:
@@ -290,7 +290,7 @@ Example CSV headers:
 
 <!-- Link Index -->
 
-[wiki_incident_template_link]: https://example.com
+[wiki_incident_template]: https://example.com
 [incident_oncall_rotation]: https://example.com
 [concerned_responders_email]: mailto:concerned_responders@acme.com
 [service_ownership_resource]: https://example.com
@@ -299,3 +299,4 @@ Example CSV headers:
 [incident_documentation#severity_matrix]: incident_doc#severity_matrix
 [incident_distro_email]: example_incidident_distoro_email@exmple.com
 [incident_documentation#retrospectives]: incident_doc#retrospectives
+[status_page]: https://your-status-page.com
