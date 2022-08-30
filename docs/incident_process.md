@@ -10,29 +10,31 @@ Email [concerned_responders@acme.com][concerned_responders_email] with questions
 
 ## Incident response process outcomes
 
-Stealing a page from agile’s story mapping methods, these are the intended outcomes of this incident response process:
+We realize that incidents have a blast radius that impacts several different personas, for the purposes of this guide we'll focus on three core audiences that deeply feel the impact of incidents:
 
-As a responder, during an incident:
+* Incident Responders - The people responsible for resolving our incidents
+* Our Customers - The people that feel the most immediate pain from our incidents
+* Our Organization - The people that feel the reprecussions of our incidents
+
+For each of these personas, we're setting the follow expectations:
+### As a responder, during an incident:
 
 * I avoid troubleshooting on the customer's dime and prioritize remediation, even if that creates additional engineering work later.
-* I know when to escalate and it’s clear how to do so.
-* I understand who owns the services and processes involved in the incident.
-* I have a clear understanding of business and customer expectations during and after an incident.
+* I escalate to another individual or team when it is clear an incident needs additional support.
+* I clearly communicate with the other people responding to the incident and avoid trying to be a silent hero.
 
-As an affected customer or customer-facing stakeholder, during an incident:
+### As an affected customer, during an incident:
 
-* I know that I will receive proactive communication about incidents.
+* I receive proactive communication about incidents.
 * I know what functionality is impacted and how.
 * I know when to expect updates or, if possible, remediation.
 * I know about any potential workarounds.
 
-As an organization, during an incident:
+### As an organization, during an incident:
 
-* We understand that when managing a complex system, avoiding all incidents is impossible.
-* While we can’t entirely avoid incidents, we do our best to build resilient systems and ensure our response is as efficient and effective as possible.
-* We strive to learn from and improve after every incident, focusing on systems and processes rather than blaming individuals or teams.
+* We give the necessary space to the team(s) responding and resolving the incident.
+* We provide support to responders in the form of rescheduling meetings and providing air coverage
 * We are pragmatic; this response process can’t account for all situations, so we support responders in using common sense when deviating from the process.
-
 ## Detailed process by milestone
 
 While incidents are unpredictable by nature, almost all of them progress through a series of predictable phases or milestones. This section lays out the progression of an incident, the expectations and next steps for responders to follow during each phase, and some practical advice to help guide them.
