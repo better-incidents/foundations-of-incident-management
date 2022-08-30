@@ -1,12 +1,12 @@
 # Incident Response Process at Acme Corp
 
-_Are you actively experiencing an incident and need support? Make a copy of the [incident template](#heading=h.f50knt1ra00e) to use as a checklist and reduce cognitive overhead. The most important thing to focus on is remediating the incident. Page[ incident_oncall_rotation](www.fake-link-to-rotation.com) for emergency assistance._
+_Are you actively experiencing an incident and need support? Make a copy of the [incident template][wiki_incident_template_link] to use as a checklist and reduce cognitive overhead. The most important thing to focus on is remediating the incident. Page [incident on-call rotation][incident_oncall_rotation] for emergency assistance._
 
 Building customer trust, acting as an owner in all we do, and continuously learning are critical values at Acme Corp. We reflect these values in how we build and deliver our products and in how we support our customers. We also reflect these values in how we approach software incidents.
 
 This document outlines our organization-wide incident response process. It is designed to be a living document that captures best practices from our shared experience. This document will grow and change with us as we scale.
 
-Email [concerned_responders@acme.com](mailto:concerned_responders@acme.com) with questions, concerns, or proposed updates to this document.
+Email [concerned_responders@acme.com][concerned_responders_email] with questions, concerns, or proposed updates to this document.
 
 ## Incident response process outcomes
 
@@ -41,11 +41,11 @@ While incidents are unpredictable by nature, almost all of them progress through
 
 #### In the first 10 minutes of identifying a possible issue, the first responder will:
 
-Using the [incident severity definition/matrix](#heading=h.bc3uwmdnxit6), decide if the issue at hand qualifies as an incident. If it’s unclear if the issue warrants incident status based upon our definitions, but evidence indicates something is wrong, err on the side of declaring an incident. Engaging a broader group can help confirm whether or not the  suspect occurrence  is an issue and determine what next steps should be taken.
+Using the [incident severity definition/matrix](#severity), decide if the issue at hand qualifies as an incident. If it’s unclear if the issue warrants incident status based upon our definitions, but evidence indicates something is wrong, err on the side of declaring an incident. Engaging a broader group can help confirm whether or not the  suspect occurrence  is an issue and determine what next steps should be taken.
 
 It’s better to declare an incident, then quickly downgrade it to a bug than to let an issue simmer and potentially have a negative impact on our customer experience.
 
-If it’s determined that an issue is not at “incident” level, please create a bug in the appropriate team's backlog using the [incident ownership table](#heading=h.bc3uwmdnxit6).
+If it’s determined that an issue is not at “incident” level, please create a bug in the appropriate team's backlog using the [service ownership table][service_ownership_resource].
 
 If it’s determined that the issue is an incident, the first thing to do is name an incident commander. Ideally, a member of the team most closely related to the issue will assume the role of incident commander for the duration of that incident. If it’s unclear what teams are related or there is a delay in the team's engagement, these duties should be carried out by someone in the initial incident declarer group who is less critical for the technical triage effort.
 
@@ -53,15 +53,15 @@ If it’s determined that the issue is an incident, the first thing to do is nam
 
 #### In the first 20 minutes, the incident commander will:
 
-* Page the owning team of the impacted service or functionality based on [this document](#heading=h.4icsbi9129b9). If it’s unclear who owns the impacted service, page the engineering leadership on-call schedule for assistance.
-* Create a new incident document from the [incident document template](http://www.link-to-create-a-copy-of-the-incident-doc.com).
+* Page the owning team of the impacted service or functionality based on [this document][service_ownership_resource]. If it’s unclear who owns the impacted service, page the [incident on-call rotation][incident_oncall_rotation] for assistance
+* Create a new incident document from the [incident document template][wiki_incident_template_link]
     * Name it using the format: [inc-YY-MM-DD-SEV-X] {functionality} is {state} for {audience}
-    * Move it [here](link-to-correct-directory-in-wiki.com)
+    * Move it [here][wiki_incident_directory]
 * Fill out the initial incident description and format for initial communication in the incident document. Here’s an example:
 
         Subject: SEV1/SEV2/SEV3 Incident - {functionality} is {state} for {audience}
 
-        &lt;Functionality> is currently experiencing a SEV1/SEV2/SEV3 incident. The required teams are being engaged and are actively triaging the issue.
+        <Functionality> is currently experiencing a SEV1/SEV2/SEV3 incident. The required teams are being engaged and are actively triaging the issue.
 
         Identified time: 23:xx est
 
@@ -79,7 +79,7 @@ If it’s determined that the issue is an incident, the first thing to do is nam
 
         &lt;Responder Name>
 
-* Send the created message to the [incidents@acme.com](mailto:incidents@acme.com) email distribution list and post it in the [#incidents](www.google.com) chat channel.
+* Send the created message to the [incident distro][incident_distro_email] email distribution list and post it in the [#incidents][general_incidents_chat_channel] chat channel.
 * Create a dedicated chat channel using the format using the format: inc-YY-MM-DD-SEV-X-{functionality} is {state} for {audience} and post a link to the incident document in the channel and bookmark the file.
 * Create and join a video bridge &lt;link to create a video bridge>
     * Add the link to the incident document
@@ -113,7 +113,7 @@ Remember, the main priority in this phase is remediation — focus on mitigating
     * Listen for indicators that understanding of the impact is changing; if the impact is greater in severity than initially thought, update the severity and communicate to the incident disto and chat channel
     * If the responder team is struggling to make progress and you have exhausted your available options, consider escalating to technical leadership to aid in engaging responders with fresh eyes and/or deeper expertise
 * Every (20m/50m/2h50m) check in with responders and compose a status update
-* Every (30m/1h/3hr) send the update to the [incident distro](https://file+.vscode-resource.vscode-cdn.net/Users/ryanmcdonald/Projects/foundations_of_incident_management/example_incidident_distoro_email@exmple.com) list by replying to all on the initial email thread. Add the update to the Latest Communication section of the incident document and post the update to the incident chat channel.
+* Every (30m/1h/3hr) send the update to the [incident distro][incident_distro_email] list by replying to all on the initial email thread. Add the update to the Latest Communication section of the incident document and post the update to the incident chat channel.
 
 Example "update" messaging:
 
@@ -123,7 +123,7 @@ Example "update" messaging:
 
         <A non-technical, realistic but confidence-inspiring description of the state of incident> No additional resources are required at this time.
 
-Please see the [incident document](http://www.google.com) for details.
+Please see the [incident document](http://dummy-link-to-incident-doc.com) for details.
 
 
             Expect an update on the status of this incident in (30 minutes | 1 hour | 3 hours) or sooner.
@@ -133,23 +133,17 @@ Please see the [incident document](http://www.google.com) for details.
 * Every (1h/3h/- ) update the status page
     * Add the public link to Add the update to the Latest Communication section of the incident document as an item in the timeline
 
-        Example “investigating” messaging:
+Example “investigating” messaging:
 
+    Our monitoring systems have detected a potential issue with requests to our API. Our engineering team has been alerted and is actively investigating. We will provide an update in 1 hour or as soon as more information is available.
 
-            Our monitoring systems have detected a potential issue with requests to our API. Our engineering team has been alerted and is actively investigating. We will provide an update in 1 hour or as soon as more information is available.
+Example “update” messaging:
 
+    We continue to investigate an issue where requests to our API are returning an error. Customers may intermittently receive 500 internal server errors from all endpoints. We expect to provide another update in 1 hour or as soon as more information is available.
 
-_		_Example “update” messaging:
+Example “resolved” messaging:
 
-
-            We continue to investigate an issue where requests to our API are returning an error. Customers may intermittently receive 500 internal server errors from all endpoints. We expect to provide another update in 1 hour or as soon as more information is available.
-
-
-        Example “resolved” messaging:
-
-
-            All endpoints were degraded for 15 minutes between xx:xx am and xx:xx am Eastern Time on xx/xx/20xx. During this period, customers may have intermittently received 500 internal server errors. The issue has now been resolved.
-
+    All endpoints were degraded for 15 minutes between xx:xx am and xx:xx am Eastern Time on xx/xx/20xx. During this period, customers may have intermittently received 500 internal server errors. The issue has now been resolved.
 
 ### Mitigate and Resolve
 
@@ -176,7 +170,7 @@ An incident is resolved when the following conditions are met:
 
         A special thanks to all the responders of this incident including team x and the customer support team, who really helped us resolve this issue.
 
-        Please see the [incident document](http://www.google.com) for details.
+        Please see the [incident document](http://dummy-link-to-incident-doc.com) for details.
 
 ### Blameless retrospective
 
@@ -204,17 +198,17 @@ Run well, these meetings can create positive feedback loops for the incident man
 
 ## Definitions
 
-Incident
+### Incident
 
 * An unexpected degradation or interruption of functionality in our product to a degree that is noticeable to our customers or internal stakeholders. The extent of the impact and our response to any given incident is delineated by the severities defined below.
 
-Incident document
+### Incident document
 
 * The incident document is the source of truth for the incident. An incident can be run entirely with the incident document’s guidance. It also serves as the collection point for all information relating to the incident during triage and after resolution.
 * The incident commander is accountable for ensuring this document is up to date and will often serve as the document’s primary scribe, although others should feel free to contribute and comment. Similarly, in a sufficiently complicated incident, scribing can be delegated to another, more available responder.
 * Training the organization to review the document before engaging responders directly helps ensure everyone is on the same page and minimizes unneeded disruptions to the response effort.
 
-Severity
+### Severity
 
 * SEV1: Major incident
     * Breached customer SLA or any condition that will lead to the imminent breach of a customer SLA
@@ -226,14 +220,16 @@ Severity
 * SEV3: Investigation
     * Non-critical product functionality is broken but not significantly detrimental to the customer experience
 
-Owned services
+### Owned services
 
-* Ownership document or architecture diagram outlining all services and functionalities in the product(s)  and list owners and contact information for each. This should include critical vendors and contact information for their support organizations and status pages.
-* Example CSV:  \
-	functionality, service, owning team, paging schedule link \
+* Ownership document or architecture diagram outlining all services and functionalities in the product(s) and list owners and contact information for each. This should include critical vendors and contact information for their support organizations and status pages.
+
+Example CSV headers:
+
+	functionality, service, owning team, paging schedule link
 	vendor, product, owning team/owner of relationship, link to vendor support portal, vendor status page
 
-Responder roles
+### Responder roles
 
 * Triage engineer
     * A service owner who is on call and paged for interruptions to a service
@@ -247,12 +243,12 @@ Responder roles
     * A broad group of roles whose expectations of the incident response process require management
     * Receive information about the status of current incidents and updates on expectations set by the incident response process
 
-Responding team
+### Responding team
 
 * All responders who are hands-on and engaged to successfully manage an incident, technical or otherwise.
 * This includes support and customer success if the interactions are bi-directional.
 
-Milestones
+### Milestones
 
 * Declare
     * Started: When the affected system began having problems.
@@ -266,10 +262,11 @@ Milestones
     * Retrospective done: Retrospective document is complete, any additional follow on retrospectives or other meetings are done and any follow on items have been identified.
 
 ## Prerequisites
+> note: for ease of use, all links created can be input into the link index at the bottom of this document and of the incident template document.
 
 * Incident email distribution list (example: incident_updates@company.com)
     * To broadcast incident status updates to internal stakeholders. This list will receive high-level overviews of incidents, as well as updates to incident processes. Typically, this is a mix of leadership (customer facing and technical) and customer-facing teams. Product and engineering teams can be added if desired.
-* Create a “‘[concerned_responders@company.com](mailto:concerned_responders@company.com)” email alias to collect feedback on the incident management process.
+* Create a “[concerned_responders@company.com](mailto:concerned_responders@company.com)” email alias to collect feedback on the incident management process.
 * Severity levels based on your organization’s specific business needs
     * This severity matrix should be a living document that grows as you learn more about responding to incidents in the context of your business.
     * In defining your highest severity, 10-20% more conservative than your customer agreed upon SLAs are a great starting point.
@@ -283,8 +280,22 @@ Milestones
 * Monitoring that will trigger based on states that require immediate attention, often customer impacting
 * An engineering leadership on-call schedule to enable escalations
 * A basic status page capable of displaying public facing incident communications
-* Copy the [incident template](#heading=h.674x0vym8k7r) into your word processing or note taking system
+* Copy the [incident template](https://github.com/better-incidents/foundations-of-incident-management/blob/main/docs/incident_template.md) into your wiki or company note taking system and create a template
     * Documentation for importing markdown documents:
-        * [Gdocs](https://support.google.com/a/users/answer/9308885?hl=en)
+        * [Gdocs template creation](https://support.google.com/a/users/answer/9308885?hl=en)
+        * [Gdocs markdown import](https://support.google.com/docs/answer/12014036?hl=en#:~:text=You%20can%20use%20Markdown%20to,Bold)
+        * [Confluence template creation](https://support.atlassian.com/confluence-cloud/docs/create-a-template/)
+        * [Confluence markdown import](https://community.atlassian.com/t5/Confluence-questions/How-to-import-pages-with-markdown-format-into-Confluence/qaq-p/1886974)
         * Notion
-        * Confluence
+
+<!-- Link Index -->
+
+[wiki_incident_template_link]: https://example.com
+[incident_oncall_rotation]: https://example.com
+[concerned_responders_email]: mailto:concerned_responders@acme.com
+[service_ownership_resource]: https://example.com
+[wiki_incident_directory]: https://example.com
+[general_incidents_chat_channel]: https://example.com
+[incident_documentation#severity_matrix]: incident_doc#severity_matrix
+[incident_distro_email]: example_incidident_distoro_email@exmple.com
+[incident_documentation#retrospectives]: incident_doc#retrospectives
