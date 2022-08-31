@@ -34,7 +34,7 @@ For each of these personas, we're setting the follow expectations:
 
 * We give the necessary space to the team(s) responding and resolving the incident.
 * We provide support to responders in the form of rescheduling meetings and providing air coverage
-* We are pragmatic; this response process can’t account for all situations, so we support responders in using common sense when deviating from the process.
+* We make time and space for an effective response by rescheduling meetings and modifying deadlines.
 ## Detailed process by milestone
 
 While incidents are unpredictable by nature, almost all of them progress through a series of predictable phases or milestones. This section lays out the progression of an incident, the expectations and next steps for responders to follow during each phase, and some practical advice to help guide them.
