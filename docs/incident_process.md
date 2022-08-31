@@ -33,7 +33,6 @@ For each of these personas, we're setting the follow expectations:
 ### As an organization, during an incident:
 
 * We give the necessary space to the team(s) responding and resolving the incident.
-* We provide support to responders in the form of rescheduling meetings and providing air coverage
 * We make time and space for an effective response by rescheduling meetings and modifying deadlines.
 ## Detailed process by milestone
 
