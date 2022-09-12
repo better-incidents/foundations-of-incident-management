@@ -1,4 +1,4 @@
-# Incident Principals
+# Incident Principles
 
 This document contains the principles we rely on when responding to and resolving incidents. We break down the impacted groups and expectations for each of them.
 
