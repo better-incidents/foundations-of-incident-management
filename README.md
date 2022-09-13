@@ -8,7 +8,7 @@ Better Incidents is where incident management practitioners come to learn, conne
 
 This repository contains necessary documentation to jumpstart an incident management program with your team. From definitions, process, to template, we're trying to provide what we're calling **Sane Defaults** to everyone hoping to level up their incident management. We've built this guide based on our own experiences at FireHydrant, input from our frinds in the community, and maybe someday, you!
 
-All documentation can be found in the `docs/` folder, with additional subfolders for definitions and resources like the incident managers template. Keep reading this README to learn more about each of them.
+All documentation can be found in the [`docs/`](docs/) folder, with additional subfolders for definitions and resources like the incident managers template. Keep reading this README to learn more about each of them.
 
 ### Incident Process ☑️
 
@@ -19,19 +19,19 @@ The Incident Process document is helpful to align teams on a single process as y
 * Mitigation - What we consider mitigation, and what we do when we've mitigated.
 * Durable resolution - What does a durable resolution mean, and how we collaborate to achieve it.
 
-[Use the response process](docs/incident_process.md)
+* [Use the response process](docs/incident_process.md)
 
 ### Incident Principles 🧐
 
 Incidents are wide blast radius events and impact several different personas simultaneously. We provide principles to help members of different personas have a mental framework during incidents.
 
-[Use the incident principles](docs/incident_principles.md)
+* [Use the incident principles](docs/incident_principles.md)
 
 ### Incident Manager Template 🧾
 
 The incident manager template is used to make it easy to track important milestones, events, and other critical details about an incident that empower teams to communicate effectively and run invaluable retrospectives.
 
-[Use the incident manager template](docs/resources/incident_manager_template.md)
+* [Use the incident manager template](docs/resources/incident_manager_template.md)
 
 ### Definitions 📖
 
