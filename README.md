@@ -19,6 +19,8 @@ The Incident Process document is helpful to align teams on a single process as y
 * Mitigation - What we consider mitigation, and what we do when we've mitigated.
 * Durable resolution - What does a durable resolution mean, and how we collaborate to achieve it.
 
+The process documentation is a great starting point for teams looking to implement an incident management process.
+
 * [Use the response process](docs/incident_process.md)
 
 ### Incident Principles 🧐
