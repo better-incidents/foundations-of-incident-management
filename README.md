@@ -8,7 +8,7 @@ Better Incidents is where incident management practitioners come to learn, conne
 
 This repository contains necessary documentation to jumpstart an incident management program with your team. From definitions, process, to template, we're trying to provide what we're calling **Sane Defaults** to everyone hoping to level up their incident management. We've built this guide based on our own experiences at FireHydrant, input from our frinds in the community, and maybe someday, you!
 
-All documentation can be found in the `docs/` folder, with additional subfolders for definitions and resources like the incident managers template.
+All documentation can be found in the `docs/` folder, with additional subfolders for definitions and resources like the incident managers template. Keep reading this README to learn more about each of them.
 
 ### Incident Process
 
@@ -40,8 +40,6 @@ This repository aims to provide sane defaults to teams, and as a part of that, t
 * [Severities](docs/definitions/severity.md)
 * [Incident Roles](docs/definitions/roles.md)
 * [Milestones](docs/definitions/milestones.md)
-
-
 
 ## Contributing
 
