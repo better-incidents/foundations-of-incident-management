@@ -6,7 +6,7 @@ Better Incidents is where incident management practitioners come to learn, conne
 
 ## How to use this repository
 
-This repository contains necessary documentation to jumpstart an incident management program with your team. From definitions, process, to template, we're trying to provide what we're calling **Sane Defaults** to everyone hoping to level up their incident management. We've built this guide based on our own experiences at FireHydrant, input from our frinds in the community, and maybe someday, you!
+This repository contains documentation to jumpstart an incident management program with your team. The definitions, process, and template  provide sane defaults. The folks who have contributed here have several collective years of incident management experience. And there’s one thing we know for sure: there’s no single right way to build an incident management process. We hope your contributions and forks will help us.
 
 All documentation can be found in the [`docs/`](docs/) folder, with additional subfolders for definitions and resources like the incident managers template. Keep reading this README to learn more about each of them.
 
