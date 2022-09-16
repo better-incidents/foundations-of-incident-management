@@ -51,4 +51,4 @@ Want to contribute? Heck yeah! We accept contributions from fixing typos to enti
 * Fill out the issue template
 * Submit!
 
-All contributions are reviewed by our maintainers. See [.github/CODEOWNERS](CODEOWNERS)
+All contributions are reviewed by our maintainers. See [CODEOWNERS](.github/CODEOWNERS)
