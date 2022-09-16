@@ -1,4 +1,4 @@
-![better incidents logo](assets/images/logo.svg)
+[![better incidents logo](assets/images/logo.svg)](https://betterincidents.com)
 
 # Foundations of Incident Management 🔥 🚒
 
@@ -45,4 +45,10 @@ This repository aims to provide sane defaults to teams, and as a part of that, t
 
 ## Contributing
 
-Want to contribute? Heck yeah! We're
+Want to contribute? Heck yeah! We accept contributions from fixing typos to entirely new content.
+
+* Start a new issue on this repository
+* Fill out the issue template
+* Submit!
+
+All contributions are reviewed by our maintainers. See [.github/CODEOWNERS]
