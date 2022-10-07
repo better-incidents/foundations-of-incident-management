@@ -51,4 +51,10 @@ Want to contribute? Heck yeah! We accept contributions from fixing typos to enti
 * Fill out the issue template
 * Submit!
 
+On top of updates to this repository, we are also interested in sharing the stories and experience of this community. Do you want to share a hot take on what has made incident management process amazing? Or a failed experiment that you'd warn other away from?
+
+We are accepting contributions to the [supporting guide]()!  Open an issue using the share_your_story issue template and someone will be in touch.
+
 All contributions are reviewed by our maintainers. See [CODEOWNERS](.github/CODEOWNERS)
+
+
